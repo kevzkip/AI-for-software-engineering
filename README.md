@@ -59,9 +59,11 @@ def sort_dict_list_manual(dict_list, key):
             if dict_list[i][key] > dict_list[j][key]:
                 dict_list[i], dict_list[j] = dict_list[j], dict_list[i]
     return dict_list
+```
 Analysis: The AI-suggested version using Python's built-in sorted() is more efficient (O(n log n) vs manual O(n²) implementation. Testing with 1000 dictionaries showed 0.0002s (AI) vs 0.45s (manual), demonstrating AI's ability to suggest optimized solutions.
 
 Task 2: Automated Testing with AI
+```
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -83,6 +85,7 @@ def test_login():
         assert ("Welcome" if data["expected"] else "Invalid") in driver.page_source
         driver.back()
     driver.quit()
+```
 Results: Achieved 100% success rate. AI improved coverage by:
 
 Generating diverse test cases automatically
@@ -93,6 +96,7 @@ Identifying additional test scenarios (e.g., password complexity)
 
 Task 3: Predictive Analytics
 # Breast Cancer Dataset - Priority Prediction
+```
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier()
@@ -101,6 +105,7 @@ model.fit(X_train, y_train)  # X_train contains tumor features
 # Evaluation Metrics
 accuracy: 0.96
 f1_score: 0.95
+```
 Key Features: 'worst concave points', 'mean perimeter', 'worst perimeter'
 
 Part 3: Ethical Reflection
@@ -119,3 +124,14 @@ Use IBM AI Fairness 360 to quantify disparities
 Apply reweighting algorithms for balance
 
 Implement subgroup-specific thresholds
+
+
+graph TD
+    A[PR Opened] --> B[AI Analysis]
+    B --> C[Security Check]
+    B --> D[Performance Audit]
+    B --> E[Style Validation]
+    C --> F[Generate Report]
+    D --> F
+    E --> F
+    F --> G[Developer Feedback]
