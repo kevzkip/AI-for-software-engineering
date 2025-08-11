@@ -125,7 +125,7 @@ Apply reweighting algorithms for balance
 
 Implement subgroup-specific thresholds
 
-
+```mermaid
 graph TD
     A[PR Opened] --> B[AI Analysis]
     B --> C[Security Check]
